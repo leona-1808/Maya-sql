@@ -1,0 +1,7 @@
+Add IT Employee Without Salary
+Program Description
+Write a query to Insert a new employee into the EMPLOYEES table without specifying the salary for "Grace Hall" in the IT department, and then write a query to display the employees table after updated.
+
+CODE:
+INSERT INTO EMPLOYEES (EMP_ID,EMP_NAME,dept_id)VALUES(6,"Grace Hall","IT");
+SELECT * FROM EMPLOYEES;
