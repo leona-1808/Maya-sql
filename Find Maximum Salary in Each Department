@@ -1,0 +1,5 @@
+Find Maximum Salary in Each Department
+Program Description
+Write a query to identify the highest salary in each department from Employees table.
+
+select department ,max(Salary) As MaxSalary From Employees Group by department ;
