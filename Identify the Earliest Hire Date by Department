@@ -1,0 +1,6 @@
+Program Description Write a query to determine the earliest hire date for employees in each department from Employees table.
+
+-- Query to find the earliest hire date for employees in each department
+SELECT department, MIN(hire_date) AS earliest_hire_date
+FROM Employees
+GROUP BY department;
