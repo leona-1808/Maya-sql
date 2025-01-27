@@ -1,0 +1,8 @@
+Program Description
+Write a query to calculate the total number of employees in each department from Employees table.
+
+
+-- Query to count the total number of employees in each department
+SELECT department, COUNT(employeeID) AS num_employees
+FROM Employees
+GROUP BY department;
