@@ -1,0 +1,2 @@
+
+Select department ,count(EmployeeId) As DistinctEmployees From Employees Group by department;
