@@ -1,0 +1,7 @@
+Program Description
+Write a query to compute the total salary for each department from Employees table.
+
+-- Query to count the total number of employees in each department
+SELECT department, sum(salary) AS TotalSalary
+FROM Employees
+GROUP BY department;
