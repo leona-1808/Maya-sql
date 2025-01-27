@@ -1,0 +1,7 @@
+Program Description
+Write a query to determine the average salary of employees in each department from Employees table.
+
+-- Query to count the total number of employees in each department
+SELECT department, avg(Salary) AS AverageSalary
+FROM Employees
+GROUP BY department;
