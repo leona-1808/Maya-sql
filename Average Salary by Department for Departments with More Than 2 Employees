@@ -1,0 +1,9 @@
+Average Salary by Department for Departments with More Than 2 Employees
+Program Description
+Write a query to find the average salary for each department that has more than two employees from Employees table.
+
+-- Query to find the average salary for each department with more than two employees
+SELECT department, AVG(salary) AS average_salary
+FROM Employees
+GROUP BY department
+HAVING COUNT(employeeID) > 2;
