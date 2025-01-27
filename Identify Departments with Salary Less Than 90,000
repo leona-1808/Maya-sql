@@ -1,0 +1,8 @@
+Identify Departments with Salary Less Than 90,000
+Program Description
+Write a query to identify departments have a maximum salary of less than $90,000 from Employees table.
+-- Query to find departments with total salary between $130,000 and $180,000
+SELECT department, max(salary) AS total_salary
+FROM Employees
+GROUP BY department
+HAVING max(salary) <900000;
