@@ -1,0 +1,10 @@
+Find the Top 3 Customers by Total Spending
+Program Description
+Write a query to find the top 3 customers who spent the most money on their orders from Orders table.
+
+-- Query to find the top 3 customers by total spending
+SELECT CustomerName, SUM(TotalAmount) AS TotalSpending
+FROM Orders
+GROUP BY CustomerName
+ORDER BY TotalSpending DESC
+LIMIT 3;
