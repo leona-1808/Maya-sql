@@ -1,0 +1,8 @@
+List Movies with 'Fight' or 'The' in Their Titles
+Program Description
+Write a query to List Movies with 'Fight' or 'The' in Their Titles from Movies table.
+
+SELECT * 
+FROM Movies 
+WHERE title LIKE '%Fight%' 
+   OR title LIKE '%The%';
