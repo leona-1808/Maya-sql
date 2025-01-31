@@ -1,0 +1,19 @@
+High-Cost Destinations with Maximum Popularity Rank Less Than 5
+
+Program Description:
+Find the average cost and the highest popularity rank of destinations for each country where the average cost is greater than 1000 
+and the maximum popularity rank is less than 5. Display the results ordered by the maximum popularity rank in descending order.
+
+SELECT 
+  Country,
+  ROUND(Average_cost, 1) AS AVG_COST,
+  MAX(Popularity_Rank) AS MAX_RANK 
+FROM 
+  Travel_Destinations 
+GROUP BY 
+  Country 
+HAVING 
+  ROUND(Average_cost, 1) > 1000 
+  AND MAX(Popularity_Rank) < 5 
+ORDER BY 
+  MAX(Popularity_Rank) DESC;
